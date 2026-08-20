@@ -1,0 +1,12 @@
+# Lune 运行输出
+export/
+
+# Roblox 文件
+*.rbxl
+*.rbxlx
+*.rbxl.lock
+
+# 编辑器
+.vscode/
+.idea/
+*.code-workspace
