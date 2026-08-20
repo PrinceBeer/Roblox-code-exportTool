@@ -1,0 +1,16 @@
+# ============================================================
+# 【作者专用】远程更新源配置
+#
+# 在这里填上"更新源"地址后, 使用者每次运行 导出.bat 都会自动
+# 从该地址检查版本, 发现新版就自动下载 export_scenes.lua。
+# 也就是说: 你更新并发布新版本后, 别人下次运行就自动升级。
+#
+# 用法: 把下面这行的 # 去掉, 填成你的仓库地址(任选一种):
+#
+#   GitHub(国内可能慢): https://raw.githubusercontent.com/你的用户名/rbxl-code-export/main
+#   GitHub 加速镜像:    https://ghproxy.net/https://raw.githubusercontent.com/你的用户名/rbxl-code-export/main
+#   Gitee(国内快):      https://gitee.com/你的用户名/rbxl-code-export/raw/main
+#
+# 注意: 仓库里需要有 VERSION.txt(版本号)和 export_scenes.lua 两个文件。
+# 留空/全部注释 = 不检查更新。
+# ============================================================

@@ -35,6 +35,10 @@ local PLACES = {
 -- 方式二:自动扫描(把 PLACES 清空成 {}),导出当前目录所有 .rbxl;SKIP_FILES 排除
 ```
 
+**命令行参数(外部控制)**:`lune run export_scenes.lua -- <文件1> [文件2 ...]` 只导出指定文件(支持绝对路径,输出目录名取文件名)。无参数时按 参数 → PLACES → 自动扫描 的优先级。
+
+**傻瓜分发版**:仓库 `dist/` 目录是自包含成品(内置 lune.exe + `导出.bat` 双击/拖拽 + 中文使用说明 + 作者控制的自动更新机制——用户在 `更新源.txt` 指向的地址自动拉取最新 `export_scenes.lua`)。给别人用时直接打包 dist 即可。
+
 脚本行为:
 
 - `Script` → `.server.lua`、`LocalScript` → `.client.lua`、`ModuleScript` → `.lua`,镜像实例层级;

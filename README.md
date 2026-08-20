@@ -43,6 +43,20 @@ export/MyPlace/
 └── 导出清单.txt              # export manifest (UTF-8)
 ```
 
+### External control (CLI args)
+
+Pass files as arguments to export only those (paths may be absolute; basename is used as the output folder name):
+
+```
+lune run export_scenes.lua -- MyPlace.rbxl "C:\Other\AnotherPlace.rbxl"
+```
+
+If no args are given, `PLACES` is used; if `PLACES = {}`, all `*.rbxl` in the current folder are auto-scanned (`SKIP_FILES` excludes files).
+
+## Distribution Package (`dist/`)
+
+The `dist/` folder is a **foolproof, self-contained distribution**: it bundles `lune.exe`, a double-click/drag-and-drop `导出.bat` entry, Chinese instructions, and an **author-controlled auto-update mechanism** (users automatically download the latest `export_scenes.lua` from your `更新源.txt` URL on every run). Recipients need to install nothing. See [`dist/README.md`](dist/README.md).
+
 ## Sync Back to Studio — Read This First
 
 Rojo sync **deletes everything inside a mapped container that is not in the project**. The generated project only maps containers that are fully represented (pure code). Containers with heavy content (parts / rigs / UI layout) are exported for reference but **not mapped**, so syncing cannot destroy them.
