@@ -1,3 +1,7 @@
+#dist
+你可以只下载dist文件。傻瓜式导出roblox项目的代码，整理成 Rojo 项目。里面有详细的使用说明。
+
+You only need to download the dist files. It provides a simple way to export code from Roblox projects and organize them into a Rojo project. Detailed usage instructions are included.
 # rbxl-code-export
 
 从 Roblox 场景/模型文件(`.rbxl`)中导出代码,整理成 Rojo 项目,在 VS Code 中编辑。
